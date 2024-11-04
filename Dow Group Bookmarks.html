@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Tabs</title>
+  <script>
+    function openTabs() {
+      const urls = [
+        "https://app.hubspot.com/contacts/9242091/record/0-2/9538081863",
+        "https://docs.google.com/document/d/1BL8ONSZYXz1fy20MiTgQTyJv8rXlKJFc4AhaVPIs0A4/edit?tab=t.0",
+        "https://app.powerbi.com/Redirect?action=OpenReport&appId=2db3929e-a9f9-4277-a0ab-c44f081f2ae2&reportObjectId=7f5a5aaf-da8f-4022-b5d6-53729a99e26a&ctid=f552482b-c4d0-42f1-831c-549b573e685c&reportPage=ReportSection0bb96c8e3e3b44c448f9&visual=1980f5c07a7a52a8b0ed&height=612.41&width=1271.86&bookmarkGuid=9e23dd87-8800-43b7-b534-7780a81a3773&pbi_source=shareVisual",
+        "https://app.powerbi.com/Redirect?action=OpenReport&appId=2db3929e-a9f9-4277-a0ab-c44f081f2ae2&reportObjectId=7f5a5aaf-da8f-4022-b5d6-53729a99e26a&ctid=f552482b-c4d0-42f1-831c-549b573e685c&reportPage=ReportSection0bb96c8e3e3b44c448f9&visual=1980f5c07a7a52a8b0ed&height=612.41&width=1271.86&bookmarkGuid=9e23dd87-8800-43b7-b534-7780a81a3773&pbi_source=shareVisual",
+	"https://app.brivity.com/account/personal"
+        // Add as many URLs as needed for this customer
+      ];
+      
+   urls.forEach((url, index) => {
+        setTimeout(() => {
+          window.open(url, '_blank');
+        }, index * 1000);  // Opens each tab 1 second apart
+      });
+    }
+  </script>
+</head>
+<body>
+  <h1>Open Dow Group Tabs</h1>
+  <button onclick="openTabs()">Click to Open Tabs</button>
+</body>
+</html>
